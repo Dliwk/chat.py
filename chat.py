@@ -27,7 +27,7 @@ if ans == '1':
     print(f'New connection from {name2} ({addr[0]})')
     send(name)
     while True:
-        send(input(name + ": "))
+        send(' '+input(name + ": "))
         print(name2 + ": ", end='')
         a = recv()
         if a == '':
@@ -48,4 +48,4 @@ else:
             print("Diskonnected")
             exit(0)
         print(a)
-        send(input(name + ": "))
+        send(' '+input(name + ": "))
