@@ -3,13 +3,16 @@ import socket
 
 def recv():
     global conn
-    return conn.recv(1024**2).decode()
+    return conn.recv(1024).decode()
 
 def send(s):
     global conn
     snd = b''
     for i in s:
-        snd += i.encode()
+        try:
+            snd += i.encode()
+        except:
+            pass
     conn.send(snd)
 
 name = input("Your name is ")
