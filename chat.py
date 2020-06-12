@@ -31,7 +31,7 @@ if ans == '1':
         print(name2 + ": ", end='')
         a = recv()
         if a == '':
-            print("Diskonnected")
+            print("Disconnected")
             exit(0)
         print(a)
 else:
@@ -45,7 +45,7 @@ else:
         print(name2 + ": ", end='')
         a = recv()
         if a == '':
-            print("Diskonnected")
+            print("Disconnected")
             exit(0)
         print(a)
         send(' '+input(name + ": "))
